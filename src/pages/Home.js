@@ -10,7 +10,7 @@ const Home = ({ pageName }) => {
             <Navbar pageName={pageName} />
             <div className="content-page">
                 <div>
-                    <label>Challenges from : </label>
+                    <span>Challenges from : </span>
                     <ul>
                         <li>
                             <Link to="https://100dayscss.com/days/1/"> 100 Days CSS </Link>
@@ -19,16 +19,16 @@ const Home = ({ pageName }) => {
                             <Link to="https://50projects50days.com/#projects">50 Projects - 50 Days</Link>
                         </li>
                         <li>
-                            <Link to="www.dailyui.co"> DailyUI</Link>
+                            <Link to="https://dailyui.co"> DailyUI</Link>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <label>Template : </label>
+                    <span>Template : </span>
                     <Link to="https://codepen.io/pen?template=wMQKOq&editors=1100">CodeIO</Link>
                 </div>
                 <div>
-                    <label>Generator : </label>
+                    <span>Generator : </span>
                     <ul>
                         <li>
                             <Link to="https://cssgenerator.org/">CSS</Link>
@@ -42,7 +42,7 @@ const Home = ({ pageName }) => {
                     </ul>
                 </div>
                 <div>
-                    <label>Open-Source UI elements for any project : </label>
+                    <span>Open-Source UI elements for any project : </span>
                     <Link to="https://uiverse.io/">UIverse</Link>
                 </div>
             </div>
