@@ -4,6 +4,7 @@ body {
         "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #cfdfd9;
 }
 
 code {
@@ -57,4 +58,11 @@ code {
 }
 .number-more {
     margin-left: 3%;
+}
+
+.challenge-zone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
 }
