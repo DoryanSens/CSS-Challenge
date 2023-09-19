@@ -1,50 +1,29 @@
-import { useParams, useNavigate } from "react-router"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { useParams, useNavigate } from "react-router";
 import DynamicImport from "../DynamicImport";
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import Navbar from "./Navbar";
 
-const ChallengePage = () =>{
-    const navigate = useNavigate()
+const ChallengePage = ({ pageName }) => {
     const params = useParams();
-    const [id, setId] = useState(params.Id)
-    const [okNavigate, setOkNavigate] = useState(false);
+    const navigate = useNavigate();
+
+    const [id, setId] = useState(params.Id);
     const filePath = `./challenges/${id}/Challenge`;
 
-    const goHomePage = () =>{
-        const path = `/`; 
-        navigate(path);
-    }
-    const goPrevious = () =>{
-        id <= 1 ? setId(10) : setId(`${parseInt(id) -1}`)
-        setOkNavigate(true)
-    }
-  
-    const goNext = () =>{
-        id >= 10 ? setId(1) : setId(`${parseInt(id) +1}`)
-        setOkNavigate(true)
+    useEffect(()=>{
+        navigate(`/Challenge/${id}`);
+    },[navigate, id])
+
+    const updateIdChallengeFct = (newId) =>{
+        setId(newId)
     }
 
-    useEffect(() =>{
-        if (okNavigate) {
-            navigate(`/Challenge/${parseInt(id)}`)
-        }
-    }, [navigate, id, okNavigate])
-    
-    return <>
-        <div className="challenge-flex-container">
-            <button  className="challenge-flex-items" onClick={goHomePage}><FontAwesomeIcon icon={faHouse } size="2xl"/></button>
-        </div>
-        <div className="challenge-absolute-data" >
-            <h1>Challenge </h1>
-            <label>Challenge Id : {params.Id}</label>
-            <div>
-                <button onClick={goPrevious}><FontAwesomeIcon icon={faCaretLeft } size="xs"/></button>
-                <button onClick={goNext}><FontAwesomeIcon icon={faCaretRight } size="xs"/></button>
-            </div>
-        </div>
-        <DynamicImport filePath={filePath} id={id} />        
-    </>
-}
+    return (
+        <>
+            <Navbar pageName={pageName} updateIdChallengeFct={updateIdChallengeFct} />
+            <DynamicImport filePath={filePath} id={id} />
+        </>
+    );
+};
 
-export default ChallengePage
+export default ChallengePage;

@@ -13,7 +13,7 @@ const AllRoutes = () => {
       {menus.map(
           // With elem.component => can pass props <elem.component props={props} />
           // Pass Trought props <component {...props} />
-          (elem, index) => <Route path={elem.path} element={<elem.component />} key={index} exact={elem.exact} />
+          (elem, index) => <Route path={elem.path} element={<elem.component pageName={elem.title} />} key={index} exact={elem.exact} />
           // (elem, index) => <Route path={elem.path} element={elem.element} key={index} exact={elem.exact} />
       )}
     </Routes>

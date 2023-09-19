@@ -1,37 +1,60 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.challenge-flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-  align-content: normal;
+.navbar {
+    background: #4f505e;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 1%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.challenge-flex-items:nth-child(1) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  margin: 15px 15px 15px 15px;
+.pageName {
+    color: #04aa6d;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000, 1px 1px #000000, -1px -1px #000000,
+        1px -1px #000000, -1px 1px #000000;
 }
 
-.challenge-absolute-data{
-  position: absolute;
-  top: -15px;
+.number-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-quantity {
+    padding: 0.25rem;
+    border: 1px solid black;
+    width: 60px;
+    border-radius: 10%;
+    font-size: 22px;
+    text-align: center;
+}
+
+.nav-btn {
+    background-color: #04aa6d !important;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 6px 18px;
+    cursor: pointer;
+}
+
+.number-less {
+    margin-right: 3%;
+}
+.number-more {
+    margin-left: 3%;
 }

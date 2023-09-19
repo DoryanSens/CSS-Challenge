@@ -18,7 +18,7 @@ const routes = [
         exact : true,
     },
     {
-        title : "page 404",
+        title : "Error 404",
         path : "*",
         element : <Error404Page />,
         component : Error404Page, 
