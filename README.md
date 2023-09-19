@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Learn More
 
-CSS - Challenge it's a place to test and improve CSS skills
+CSS - Challenge : it's a place to test and improve CSS skills
 
 ## Available Scripts
 
