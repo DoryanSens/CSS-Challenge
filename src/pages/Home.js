@@ -34,6 +34,15 @@ const Home = ({ pageName }) => {
                             <Link to="https://cssgenerator.org/">CSS</Link>
                         </li>
                         <li>
+                            <Link to="https://webcode.tools/">Web code tools</Link>
+                        </li>
+                        <li>
+                            <Link to="https://grid.layoutit.com/">CSS Grid</Link>
+                        </li>
+                        <li>
+                            <Link to="https://www.cssportal.com/css-flexbox-generator/">CSS Flex</Link>
+                        </li>
+                        <li>
                             <Link to="https://loremipsum.io/generator/">Lorem Ipsum</Link>
                         </li>
                         <li>
