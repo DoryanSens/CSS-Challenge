@@ -76,6 +76,7 @@
   line-height :60px;
   text-transform: uppercase;
   font-weight:700;
+  letter-spacing: normal;
 }
 
 .others{
@@ -83,4 +84,5 @@
   line-height :20px;
   text-transform: uppercase;
   font-weight:700;
+  letter-spacing: normal;
 }

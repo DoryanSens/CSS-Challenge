@@ -62,7 +62,29 @@ code {
 
 .challenge-zone {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
+    height: 88vh;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 21px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+}
+
+.notFoundPage {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 21px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+}
+.notFoundPage > * {
+    margin-top: 10px;
 }

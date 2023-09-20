@@ -3,7 +3,7 @@
   const importComponent = (path) =>
     lazy(() =>
       import(`${path}`).catch((err) => {
-        return import(`./pages/Error404Page`);
+        return import(`./pages/ChallengeNotFound`);
     }),
   );
 
