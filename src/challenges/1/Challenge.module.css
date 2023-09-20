@@ -1,22 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
 .frame {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: fixed;
   width: 400px;
   height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
   border-radius: 2px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
   background: #fff;
   color: #333;
 	font-family: "Courier New", "Courier",'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  background: rgb(88,88,190);
   background: linear-gradient(43deg, rgba(88,88,190,1) 13%, rgba(87,146,176,1) 53%, rgba(24,129,149,1) 88%);
 }
 

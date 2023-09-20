@@ -2,24 +2,25 @@
 
 .frame {
     position: fixed;
-    border-radius: 2px;
     width: 80%;
     height: 80%;
+    border-radius: 2px;
     box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
     color: #333;
+    background-color: #fff;
     font-family: "Courier New","Open Sans", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+  
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    background-color: #fff;
 }
+
 
 .img{
     flex-grow: 0;
